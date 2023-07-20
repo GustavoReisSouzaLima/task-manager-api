@@ -4,6 +4,9 @@ const path = require('path');
 
 const app = express();
 
+// Parse request bodies for JSON
+app.use(express.json());
+
 // Routes
 const Task = require('./routes/tasks');
 
